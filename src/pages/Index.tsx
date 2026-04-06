@@ -428,7 +428,7 @@ const Index = () => {
           </div>
           <h2 className="font-oswald text-5xl md:text-6xl font-bold uppercase mb-16">Контакты</h2>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid md:grid-cols-1 gap-16 max-w-xl">
             <div>
               <div className="space-y-6 mb-10">
                 {[
@@ -460,7 +460,7 @@ const Index = () => {
               </a>
             </div>
 
-            <ContactForm />
+
           </div>
         </div>
       </section>
