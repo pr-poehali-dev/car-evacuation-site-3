@@ -404,6 +404,18 @@ const Index = () => {
               </div>
             ))}
           </div>
+
+          <div className="mt-10 flex justify-center">
+            <a
+              href="https://yandex.ru/maps/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 border border-accent-yellow text-accent-yellow font-oswald font-semibold px-8 py-4 text-lg uppercase tracking-wide hover:bg-accent-yellow hover:text-primary-foreground transition-all"
+            >
+              <Icon name="Star" size={20} />
+              Оставить отзыв на Яндекс.Картах
+            </a>
+          </div>
         </div>
       </section>
 
