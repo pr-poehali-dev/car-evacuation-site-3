@@ -184,8 +184,7 @@ const Index = () => {
                   <Icon name={s.icon} size={22} className="text-accent-yellow" />
                 </div>
                 <h3 className="font-oswald text-xl font-semibold uppercase mb-3 group-hover:text-accent-yellow transition-colors">{s.title}</h3>
-                <p className="font-ibm text-sm text-muted-foreground leading-relaxed mb-6">{s.desc}</p>
-                <div className="font-oswald text-lg font-bold text-accent-yellow">{s.price}</div>
+                <p className="font-ibm text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
