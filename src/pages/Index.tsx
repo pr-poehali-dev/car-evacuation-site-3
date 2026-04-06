@@ -41,10 +41,14 @@ function ContactForm() {
   const [phone, setPhone] = useState("");
   const [desc, setDesc] = useState("");
 
+  const [messenger, setMessenger] = useState<"whatsapp" | "max">("whatsapp");
+
   const handleSubmit = () => {
     if (!name && !phone) return;
     const text = `Новая заявка с сайта!\nИмя: ${name}\nТелефон: ${phone}\nОписание: ${desc}`;
-    const url = `https://wa.me/79188591862?text=${encodeURIComponent(text)}`;
+    const url = messenger === "whatsapp"
+      ? `https://wa.me/79188591862?text=${encodeURIComponent(text)}`
+      : `https://max.ru/im?sel=+79162345492&msg=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
 
@@ -52,6 +56,23 @@ function ContactForm() {
     <div className="bg-card border border-border p-8">
       <h3 className="font-oswald text-2xl font-bold uppercase mb-6">Оставить заявку</h3>
       <div className="space-y-4">
+        <div>
+          <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Способ связи</label>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setMessenger("whatsapp")}
+              className={`flex-1 py-2 text-sm font-oswald uppercase tracking-wide border transition-colors ${messenger === "whatsapp" ? "bg-accent-yellow text-primary-foreground border-accent-yellow" : "border-border text-muted-foreground hover:border-accent-yellow hover:text-accent-yellow"}`}
+            >
+              WhatsApp
+            </button>
+            <button
+              onClick={() => setMessenger("max")}
+              className={`flex-1 py-2 text-sm font-oswald uppercase tracking-wide border transition-colors ${messenger === "max" ? "bg-accent-yellow text-primary-foreground border-accent-yellow" : "border-border text-muted-foreground hover:border-accent-yellow hover:text-accent-yellow"}`}
+            >
+              MAX
+            </button>
+          </div>
+        </div>
         <div>
           <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Ваше имя</label>
           <input
