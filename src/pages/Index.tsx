@@ -70,11 +70,11 @@ const Index = () => {
           </div>
 
           <a
-            href="tel:+78001234567"
+            href="tel:+79188591862"
             className="hidden md:flex items-center gap-2 bg-accent-yellow text-primary-foreground font-oswald font-semibold px-5 py-2 text-sm uppercase tracking-wide hover:brightness-110 transition-all"
           >
             <Icon name="Phone" size={14} />
-            8-800-123-45-67
+            8-918-859-18-62
           </a>
 
           <button className="md:hidden text-foreground" onClick={() => setMenuOpen(!menuOpen)}>
@@ -94,11 +94,11 @@ const Index = () => {
               </button>
             ))}
             <a
-              href="tel:+78001234567"
+              href="tel:+79188591862"
               className="flex items-center gap-2 bg-accent-yellow text-primary-foreground font-oswald font-semibold px-4 py-2 text-sm uppercase w-fit"
             >
               <Icon name="Phone" size={14} />
-              8-800-123-45-67
+              8-918-859-18-62
             </a>
           </div>
         )}
@@ -134,7 +134,7 @@ const Index = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <a
-                href="tel:+78001234567"
+                href="tel:+79188591862"
                 className="flex items-center justify-center gap-3 bg-accent-yellow text-primary-foreground font-oswald font-bold px-8 py-4 text-lg uppercase tracking-wide hover:brightness-110 transition-all"
               >
                 <Icon name="Phone" size={20} />
@@ -339,7 +339,7 @@ const Index = () => {
             <div>
               <div className="space-y-6 mb-10">
                 {[
-                  { icon: "Phone", label: "Телефон диспетчера", value: "8-800-123-45-67", link: "tel:+78001234567" },
+                  { icon: "Phone", label: "Телефон диспетчера", value: "8-918-859-18-62", link: "tel:+79188591862" },
                   { icon: "MessageCircle", label: "WhatsApp / Telegram", value: "+7 (999) 123-45-67", link: "https://wa.me/79991234567" },
                   { icon: "Mail", label: "Email", value: "info@autoevak.ru", link: "mailto:info@autoevak.ru" },
                   { icon: "MapPin", label: "Адрес стоянки", value: "г. Москва, ул. Примерная, 1", link: "#" },
@@ -361,7 +361,7 @@ const Index = () => {
                 ))}
               </div>
 
-              <a href="tel:+78001234567" className="inline-flex items-center gap-3 bg-accent-yellow text-primary-foreground font-oswald font-bold px-8 py-4 text-lg uppercase tracking-wide hover:brightness-110 transition-all">
+              <a href="tel:+79188591862" className="inline-flex items-center gap-3 bg-accent-yellow text-primary-foreground font-oswald font-bold px-8 py-4 text-lg uppercase tracking-wide hover:brightness-110 transition-all">
                 <Icon name="Phone" size={20} />
                 Позвонить сейчас
               </a>
@@ -413,9 +413,9 @@ const Index = () => {
           <div className="font-ibm text-xs text-muted-foreground text-center">
             © 2024 АвтоЭвак. Профессиональная служба эвакуации автомобилей
           </div>
-          <a href="tel:+78001234567" className="flex items-center gap-2 text-accent-yellow font-oswald font-semibold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
+          <a href="tel:+79188591862" className="flex items-center gap-2 text-accent-yellow font-oswald font-semibold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
             <Icon name="Phone" size={14} />
-            8-800-123-45-67
+            8-918-859-18-62
           </a>
         </div>
       </footer>
