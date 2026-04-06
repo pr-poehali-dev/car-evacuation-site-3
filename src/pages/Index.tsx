@@ -420,6 +420,7 @@ const Index = () => {
                 {[
                   { icon: "Phone", label: "Телефон диспетчера", value: "8-918-859-18-62", link: "tel:+79188591862" },
                   { icon: "MessageCircle", label: "WhatsApp / Telegram", value: "+7 (916) 234-54-92", link: "https://wa.me/79162345492" },
+                  { icon: "MessageSquare", label: "MAX", value: "+7 (916) 234-54-92", link: "https://max.ru/im?sel=+79162345492" },
                   { icon: "MapPin", label: "Адрес стоянки", value: "Деревня Леоново, ул. Шоссейная, д. 12", link: "#" },
                   { icon: "Clock", label: "Режим работы", value: "Круглосуточно, без выходных", link: null },
                 ].map((c, i) => (
