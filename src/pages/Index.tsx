@@ -50,11 +50,12 @@ const Index = () => {
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur border-b border-border">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <span className="w-1 h-8 bg-accent-yellow inline-block"></span>
-            <span className="font-oswald text-xl font-bold tracking-wider uppercase text-foreground">
-              АвтоЭвак
-            </span>
+          <div className="flex items-center">
+            <img
+              src="https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/9a01cc72-915c-4910-998f-47fdcfef6b01.jpg"
+              alt="Логотип"
+              className="h-10 w-auto object-contain"
+            />
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -405,9 +406,12 @@ const Index = () => {
       {/* FOOTER */}
       <footer className="bg-card border-t border-border py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="w-1 h-6 bg-accent-yellow inline-block"></span>
-            <span className="font-oswald text-lg font-bold tracking-wider uppercase">АвтоЭвак</span>
+          <div className="flex items-center">
+            <img
+              src="https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/9a01cc72-915c-4910-998f-47fdcfef6b01.jpg"
+              alt="Логотип"
+              className="h-8 w-auto object-contain"
+            />
           </div>
           <div className="font-ibm text-xs text-muted-foreground text-center">
             © 2024 АвтоЭвак. Профессиональная служба эвакуации автомобилей
