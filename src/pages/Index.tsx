@@ -340,7 +340,7 @@ const Index = () => {
               <div className="space-y-6 mb-10">
                 {[
                   { icon: "Phone", label: "Телефон диспетчера", value: "8-918-859-18-62", link: "tel:+79188591862" },
-                  { icon: "MessageCircle", label: "WhatsApp / Telegram", value: "+7 (999) 123-45-67", link: "https://wa.me/79991234567" },
+                  { icon: "MessageCircle", label: "WhatsApp / Telegram", value: "+7 (916) 234-54-92", link: "https://wa.me/79162345492" },
                   { icon: "Mail", label: "Email", value: "info@autoevak.ru", link: "mailto:info@autoevak.ru" },
                   { icon: "MapPin", label: "Адрес стоянки", value: "г. Москва, ул. Примерная, 1", link: "#" },
                   { icon: "Clock", label: "Режим работы", value: "Круглосуточно, без выходных", link: null },
