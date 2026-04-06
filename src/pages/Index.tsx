@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/files/01b928db-247c-4d38-b715-8cb3efaff232.jpg";
+const HERO_IMAGE = "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/f5f94b30-f7d8-4907-a701-0b633f13dc2c.jpg";
 
 const GALLERY = [
-  { url: HERO_IMAGE, label: "Эвакуатор на дежурстве" },
-  { url: HERO_IMAGE, label: "Погрузка автомобиля" },
-  { url: HERO_IMAGE, label: "Автопарк компании" },
-  { url: HERO_IMAGE, label: "Работа на трассе" },
-  { url: HERO_IMAGE, label: "Перевозка спецтехники" },
-  { url: HERO_IMAGE, label: "Ночная смена" },
+  { url: "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/b5978cb5-df2d-4703-be6f-adc0309ebde5.jpg", label: "Эвакуатор на дежурстве" },
+  { url: "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/55bf0b97-f6a1-41fd-a566-33c28452173a.jpg", label: "Погрузка автомобиля" },
+  { url: "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/f5f94b30-f7d8-4907-a701-0b633f13dc2c.jpg", label: "Работа на трассе" },
+  { url: "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/9eb1c578-106c-445e-b82c-38bb80ebcd34.jpg", label: "Эвакуация в городе" },
+  { url: "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/6d2d3401-b0be-42c2-b296-9681d5526a1b.jpg", label: "Перевозка кроссовера" },
+  { url: "https://cdn.poehali.dev/projects/97328675-4f60-40fd-acc8-666527e51b05/bucket/b5978cb5-df2d-4703-be6f-adc0309ebde5.jpg", label: "Ночная смена" },
 ];
 
 const SERVICES = [
