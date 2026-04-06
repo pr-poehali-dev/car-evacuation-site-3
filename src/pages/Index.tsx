@@ -36,6 +36,63 @@ const NAV_LINKS = [
   { id: "contacts", label: "Контакты" },
 ];
 
+function ContactForm() {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [desc, setDesc] = useState("");
+
+  const handleSubmit = () => {
+    if (!name && !phone) return;
+    const text = `Новая заявка с сайта!\nИмя: ${name}\nТелефон: ${phone}\nОписание: ${desc}`;
+    const url = `https://wa.me/79188591862?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+  };
+
+  return (
+    <div className="bg-card border border-border p-8">
+      <h3 className="font-oswald text-2xl font-bold uppercase mb-6">Оставить заявку</h3>
+      <div className="space-y-4">
+        <div>
+          <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Ваше имя</label>
+          <input
+            type="text"
+            placeholder="Иван Иванов"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full bg-secondary border border-border px-4 py-3 font-ibm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent-yellow transition-colors"
+          />
+        </div>
+        <div>
+          <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Телефон</label>
+          <input
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="w-full bg-secondary border border-border px-4 py-3 font-ibm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent-yellow transition-colors"
+          />
+        </div>
+        <div>
+          <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Адрес или описание ситуации</label>
+          <textarea
+            rows={4}
+            placeholder="Укажите адрес или опишите проблему..."
+            value={desc}
+            onChange={(e) => setDesc(e.target.value)}
+            className="w-full bg-secondary border border-border px-4 py-3 font-ibm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent-yellow transition-colors resize-none"
+          />
+        </div>
+        <button
+          onClick={handleSubmit}
+          className="w-full bg-accent-yellow text-primary-foreground font-oswald font-bold py-4 uppercase tracking-wide hover:brightness-110 transition-all"
+        >
+          Отправить заявку
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function scrollTo(id: string) {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -367,38 +424,7 @@ const Index = () => {
               </a>
             </div>
 
-            <div className="bg-card border border-border p-8">
-              <h3 className="font-oswald text-2xl font-bold uppercase mb-6">Оставить заявку</h3>
-              <div className="space-y-4">
-                <div>
-                  <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Ваше имя</label>
-                  <input
-                    type="text"
-                    placeholder="Иван Иванов"
-                    className="w-full bg-secondary border border-border px-4 py-3 font-ibm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent-yellow transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Телефон</label>
-                  <input
-                    type="tel"
-                    placeholder="+7 (___) ___-__-__"
-                    className="w-full bg-secondary border border-border px-4 py-3 font-ibm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent-yellow transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="font-ibm text-xs uppercase tracking-wide text-muted-foreground block mb-2">Адрес или описание ситуации</label>
-                  <textarea
-                    rows={4}
-                    placeholder="Укажите адрес или опишите проблему..."
-                    className="w-full bg-secondary border border-border px-4 py-3 font-ibm text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent-yellow transition-colors resize-none"
-                  />
-                </div>
-                <button className="w-full bg-accent-yellow text-primary-foreground font-oswald font-bold py-4 uppercase tracking-wide hover:brightness-110 transition-all">
-                  Отправить заявку
-                </button>
-              </div>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
